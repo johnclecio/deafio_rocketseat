@@ -1,0 +1,157 @@
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+* {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+}
+
+.item1 {
+  grid-area: myArea;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  
+}
+.item2 {
+  grid-area: myArea2;
+  width: auto;
+  height: 20px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  
+}
+.item3 {
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+}
+.item4{
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+}
+.item5 {
+  grid-area: myArea3;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  
+}
+.item6 {
+  grid-area: myArea4;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+ 
+}
+.item7 {
+  grid-area: myArea5;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+ 
+  
+}
+.item8 {
+ grid-area: myArea6;
+ width: 300px;
+ height: 300px;
+ border-radius: 20px;
+ border: solid 1px rgb(15, 15, 15);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea2 myArea2 '
+                       'myArea . .'
+                       'myArea3 myArea4 myArea4'
+                       'myArea3 myArea5 myArea5'
+                       'myArea6 . .';
+  grid-gap: 10px;
+  margin-top: 30px;
+  
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.img1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-inline: 90px;
+  border: solid 3px rgb(5, 61, 5);
+  margin-block: 30px;
+}
+ul {
+  list-style-type: none;
+ 
+}
+.pf { 
+  font-size: 22px;
+  margin-right: 25px;
+}
+.pf2 {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 1px;
+  margin-bottom: 50px;
+}
+ .pf3  {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-right: 40px;
+  margin-block-start: auto;
+}
+.pf3-1 {
+  font-size: 20px;
+}
+.pf4
+{
+  font-size: 15px;
+  text-align: left;
+}
+
+.pf5 {
+   font-size: 15px;
+   padding-top: 10px;
+  }
+.pf6 {
+    padding-top: 10px;
+    display: flex;
+  }
+.img2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 10%;
+  margin-left: 30px;
+} 
+.pf9 {
+  font-size: 15px;
+  
+} 
+.pf10 {
+  
+  font-size: 10px;
+  margin-right: 330px;
+  
+}
+.pf11 {
+  font-size: 10px;
+  margin-right: 170px;
+}
+
+
+@media only screen and (max-width: 300px) {
+  /* For tablets: */
+  .col {width: 100%;}
+}
+
+
+

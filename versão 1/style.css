@@ -1,0 +1,125 @@
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+* {
+  background-color: var(--body-bg-color);
+}
+.container {
+  display: grid;
+  grid-template-areas:
+  "sidenav item1",
+  "sidenav item2",
+  "item3 item4"
+  "item3 item5"
+  "item6";
+}
+
+
+.img1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-inline: 90px;
+  border: solid 3px rgb(5, 61, 5);
+  margin-block: 30px;
+}
+
+.sidenav {
+  width: 300px;
+ 
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-top: 30px;
+  grid-area:  "sidenav";
+  grid-row: sidenav ;
+  
+}
+
+.item1 {
+  width: 950px;
+  height: 65px;
+  margin-top: 35px;
+  margin-bottom: -95px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  grid-area: "item1";
+  grid-column:  sidenav; 
+  
+}
+.item2 {
+  width: 450px;
+  height: 220px;
+  margin-top: 110px;
+  
+  grid-area: "item2";
+  
+  grid-row: sidenav;
+}
+.item3 {
+  width: 300px;
+
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-top: 30px;
+  grid-area:  "item3";
+  grid-column-end: item3 ;
+}
+
+.item4 {
+  width: 950px;
+  height: 65px;
+  margin-bottom: -250px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-top: 30px;
+  grid-area:  "item3";
+  grid-column: item2 ;
+}
+.item5 {
+  width: 950px;
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-top: 30px;
+  grid-area:  "item5";
+  grid-column: item2;
+  margin-top: -220px;
+ 
+}
+.item6 {
+  width: 300px;
+
+  height: 300px;
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-top: 30px;
+  grid-area:  "item6";
+  grid-column-end: item6 ;
+  margin-top: -50px;
+}
+.item7 {
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  margin-left: 480px;
+  position: absolute;
+  width: 465px;
+  height: 220px;
+}
+.item8 {
+  border-radius: 20px;
+  border: solid 1px rgb(15, 15, 15);
+  height: 220px;
+}
+
+
+
+.img2 {
+  width: 80px ;
+  height: 80px;
+  margin-right: 10px;
+}
